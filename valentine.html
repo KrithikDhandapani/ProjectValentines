@@ -45,6 +45,25 @@
       transition: transform 0.3s ease;
     }
 
+    .photos {
+      display: flex;
+      gap: 20px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+
+.photos img {
+width: 220px;
+height: 220px;
+object-fit: cover;
+border-radius: 20px;
+box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+.photo1 { top: 10%; left: 20%; transform: rotate(-8deg); }
+.photo2 { top: 35%; left: 45%; transform: rotate(6deg); }
+.photo3 { top: 15%; left: 65%; transform: rotate(-3deg); }
+
     #yesBtn {
       background-color: #ff4d6d;
       color: white;
@@ -122,6 +141,11 @@
 
         <p style="font-size:2rem;">Happy Valentine's Day cutie😘</p>
         <p style="font-size:2rem;">I love you❤️</p>
+        <div class="photos">
+            <img class="photo1" src="ImageOne.png" alt="Memory 1" />
+            <img class="photo2" src="ImageTwo.JPG" alt="Memory 2" />
+            <img class="photo3" src="ImageThree.png" alt="Memory 3" />
+        </div>
 
       `;
     });
